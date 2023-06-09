@@ -1,0 +1,12 @@
+{
+  "version": 2,
+  "dgSpecHash": "D8KqKfukkL5kySqXHMZkgQ/OobAXAoxHlj6p5EUFyTgt806UEhblAU3S5YUKKKpOoXgNQQ7bf6HTpUnks0qkQQ==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\BRIGIT\\source\\repos\\BusTecsup\\BusTecsup\\BusTecsup.iOS\\BusTecsup.iOS.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\BRIGIT\\.nuget\\packages\\system.numerics.vectors\\4.5.0\\system.numerics.vectors.4.5.0.nupkg.sha512",
+    "C:\\Users\\BRIGIT\\.nuget\\packages\\xamarin.essentials\\1.7.0\\xamarin.essentials.1.7.0.nupkg.sha512",
+    "C:\\Users\\BRIGIT\\.nuget\\packages\\xamarin.forms\\5.0.0.2196\\xamarin.forms.5.0.0.2196.nupkg.sha512"
+  ],
+  "logs": []
+}
