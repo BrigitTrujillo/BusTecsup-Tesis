@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\BRIGIT\\source\\repos\\BusTecsup\\BusTecsup\\BusTecsup.iOS\\BusTecsup.iOS.csproj": {}
+    "C:\\Users\\BRIGIT\\source\\repos\\BusTecsup-Tesis1\\BusTecsup\\BusTecsup.iOS\\BusTecsup.iOS.csproj": {}
   },
   "projects": {
-    "C:\\Users\\BRIGIT\\source\\repos\\BusTecsup\\BusTecsup\\BusTecsup.iOS\\BusTecsup.iOS.csproj": {
+    "C:\\Users\\BRIGIT\\source\\repos\\BusTecsup-Tesis1\\BusTecsup\\BusTecsup.iOS\\BusTecsup.iOS.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\BRIGIT\\source\\repos\\BusTecsup\\BusTecsup\\BusTecsup.iOS\\BusTecsup.iOS.csproj",
+        "projectUniqueName": "C:\\Users\\BRIGIT\\source\\repos\\BusTecsup-Tesis1\\BusTecsup\\BusTecsup.iOS\\BusTecsup.iOS.csproj",
         "projectName": "BusTecsup.iOS",
-        "projectPath": "C:\\Users\\BRIGIT\\source\\repos\\BusTecsup\\BusTecsup\\BusTecsup.iOS\\BusTecsup.iOS.csproj",
+        "projectPath": "C:\\Users\\BRIGIT\\source\\repos\\BusTecsup-Tesis1\\BusTecsup\\BusTecsup.iOS\\BusTecsup.iOS.csproj",
         "packagesPath": "C:\\Users\\BRIGIT\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\BRIGIT\\source\\repos\\BusTecsup\\BusTecsup\\BusTecsup.iOS\\obj\\",
+        "outputPath": "C:\\Users\\BRIGIT\\source\\repos\\BusTecsup-Tesis1\\BusTecsup\\BusTecsup.iOS\\obj\\",
         "projectStyle": "PackageReference",
         "skipContentFileWrite": true,
         "fallbackFolders": [
@@ -32,8 +32,8 @@
         "frameworks": {
           "xamarinios10": {
             "projectReferences": {
-              "C:\\Users\\BRIGIT\\source\\repos\\BusTecsup\\BusTecsup\\BusTecsup\\BusTecsup.csproj": {
-                "projectPath": "C:\\Users\\BRIGIT\\source\\repos\\BusTecsup\\BusTecsup\\BusTecsup\\BusTecsup.csproj"
+              "C:\\Users\\BRIGIT\\source\\repos\\BusTecsup-Tesis1\\BusTecsup\\BusTecsup\\BusTecsup.csproj": {
+                "projectPath": "C:\\Users\\BRIGIT\\source\\repos\\BusTecsup-Tesis1\\BusTecsup\\BusTecsup\\BusTecsup.csproj"
               }
             }
           }
@@ -65,14 +65,14 @@
         }
       }
     },
-    "C:\\Users\\BRIGIT\\source\\repos\\BusTecsup\\BusTecsup\\BusTecsup\\BusTecsup.csproj": {
+    "C:\\Users\\BRIGIT\\source\\repos\\BusTecsup-Tesis1\\BusTecsup\\BusTecsup\\BusTecsup.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\BRIGIT\\source\\repos\\BusTecsup\\BusTecsup\\BusTecsup\\BusTecsup.csproj",
+        "projectUniqueName": "C:\\Users\\BRIGIT\\source\\repos\\BusTecsup-Tesis1\\BusTecsup\\BusTecsup\\BusTecsup.csproj",
         "projectName": "BusTecsup",
-        "projectPath": "C:\\Users\\BRIGIT\\source\\repos\\BusTecsup\\BusTecsup\\BusTecsup\\BusTecsup.csproj",
+        "projectPath": "C:\\Users\\BRIGIT\\source\\repos\\BusTecsup-Tesis1\\BusTecsup\\BusTecsup\\BusTecsup.csproj",
         "packagesPath": "C:\\Users\\BRIGIT\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\BRIGIT\\source\\repos\\BusTecsup\\BusTecsup\\BusTecsup\\obj\\",
+        "outputPath": "C:\\Users\\BRIGIT\\source\\repos\\BusTecsup-Tesis1\\BusTecsup\\BusTecsup\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"

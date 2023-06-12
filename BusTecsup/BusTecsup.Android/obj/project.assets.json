@@ -3414,11 +3414,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\BRIGIT\\source\\repos\\BusTecsup\\BusTecsup\\BusTecsup.Android\\BusTecsup.Android.csproj",
+      "projectUniqueName": "C:\\Users\\BRIGIT\\source\\repos\\BusTecsup-Tesis1\\BusTecsup\\BusTecsup.Android\\BusTecsup.Android.csproj",
       "projectName": "BusTecsup.Android",
-      "projectPath": "C:\\Users\\BRIGIT\\source\\repos\\BusTecsup\\BusTecsup\\BusTecsup.Android\\BusTecsup.Android.csproj",
+      "projectPath": "C:\\Users\\BRIGIT\\source\\repos\\BusTecsup-Tesis1\\BusTecsup\\BusTecsup.Android\\BusTecsup.Android.csproj",
       "packagesPath": "C:\\Users\\BRIGIT\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\BRIGIT\\source\\repos\\BusTecsup\\BusTecsup\\BusTecsup.Android\\obj\\",
+      "outputPath": "C:\\Users\\BRIGIT\\source\\repos\\BusTecsup-Tesis1\\BusTecsup\\BusTecsup.Android\\obj\\",
       "projectStyle": "PackageReference",
       "skipContentFileWrite": true,
       "fallbackFolders": [
@@ -3439,8 +3439,8 @@
       "frameworks": {
         "monoandroid13.0": {
           "projectReferences": {
-            "C:\\Users\\BRIGIT\\source\\repos\\BusTecsup\\BusTecsup\\BusTecsup\\BusTecsup.csproj": {
-              "projectPath": "C:\\Users\\BRIGIT\\source\\repos\\BusTecsup\\BusTecsup\\BusTecsup\\BusTecsup.csproj"
+            "C:\\Users\\BRIGIT\\source\\repos\\BusTecsup-Tesis1\\BusTecsup\\BusTecsup\\BusTecsup.csproj": {
+              "projectPath": "C:\\Users\\BRIGIT\\source\\repos\\BusTecsup-Tesis1\\BusTecsup\\BusTecsup\\BusTecsup.csproj"
             }
           }
         }
@@ -3452,6 +3452,14 @@
           "Xamarin.Essentials": {
             "target": "Package",
             "version": "[1.7.0, )"
+          },
+          "Xamarin.Essentials": {
+            "target": "Package",
+            "version": "[1.7.0, )"
+          },
+          "Xamarin.Forms": {
+            "target": "Package",
+            "version": "[5.0.0.2196, )"
           },
           "Xamarin.Forms": {
             "target": "Package",

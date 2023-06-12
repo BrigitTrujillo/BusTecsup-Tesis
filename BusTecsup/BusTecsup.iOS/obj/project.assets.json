@@ -1068,11 +1068,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\BRIGIT\\source\\repos\\BusTecsup\\BusTecsup\\BusTecsup.iOS\\BusTecsup.iOS.csproj",
+      "projectUniqueName": "C:\\Users\\BRIGIT\\source\\repos\\BusTecsup-Tesis1\\BusTecsup\\BusTecsup.iOS\\BusTecsup.iOS.csproj",
       "projectName": "BusTecsup.iOS",
-      "projectPath": "C:\\Users\\BRIGIT\\source\\repos\\BusTecsup\\BusTecsup\\BusTecsup.iOS\\BusTecsup.iOS.csproj",
+      "projectPath": "C:\\Users\\BRIGIT\\source\\repos\\BusTecsup-Tesis1\\BusTecsup\\BusTecsup.iOS\\BusTecsup.iOS.csproj",
       "packagesPath": "C:\\Users\\BRIGIT\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\BRIGIT\\source\\repos\\BusTecsup\\BusTecsup\\BusTecsup.iOS\\obj\\",
+      "outputPath": "C:\\Users\\BRIGIT\\source\\repos\\BusTecsup-Tesis1\\BusTecsup\\BusTecsup.iOS\\obj\\",
       "projectStyle": "PackageReference",
       "skipContentFileWrite": true,
       "fallbackFolders": [
@@ -1093,8 +1093,8 @@
       "frameworks": {
         "xamarinios10": {
           "projectReferences": {
-            "C:\\Users\\BRIGIT\\source\\repos\\BusTecsup\\BusTecsup\\BusTecsup\\BusTecsup.csproj": {
-              "projectPath": "C:\\Users\\BRIGIT\\source\\repos\\BusTecsup\\BusTecsup\\BusTecsup\\BusTecsup.csproj"
+            "C:\\Users\\BRIGIT\\source\\repos\\BusTecsup-Tesis1\\BusTecsup\\BusTecsup\\BusTecsup.csproj": {
+              "projectPath": "C:\\Users\\BRIGIT\\source\\repos\\BusTecsup-Tesis1\\BusTecsup\\BusTecsup\\BusTecsup.csproj"
             }
           }
         }

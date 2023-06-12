@@ -1,0 +1,65 @@
+﻿<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="BusTecsup.Views.Tabbed.Inicio"
+             >
+    <ContentPage.Content>
+        <RelativeLayout>
+            <Image Source="lima.png" Aspect="AspectFill" HeightRequest="800" WidthRequest="450" />
+
+
+
+            <BoxView BackgroundColor="#28B2FF"   HeightRequest="67"   RelativeLayout.XConstraint="{ConstraintExpression Type=RelativeToParent, Property=Width, Factor=0}"
+                RelativeLayout.YConstraint="{ConstraintExpression Type=RelativeToParent, Property=Height, Factor=0}" 
+                RelativeLayout.WidthConstraint="{ConstraintExpression Type=RelativeToParent, Property=Width}"
+                />
+
+
+        <Image Source="puntos.png" Aspect="AspectFit" HeightRequest="50" WidthRequest="35" BackgroundColor="Transparent"
+       RelativeLayout.XConstraint="{ConstraintExpression Type=RelativeToParent, Property=Width, Factor=1, Constant=-50}"
+       RelativeLayout.YConstraint="{ConstraintExpression Type=RelativeToParent, Property=Height, Factor=0}"
+               />
+
+            <ImageButton Source="list.png" Clicked="OnMenuButtonClicked" HeightRequest="55" WidthRequest="70" BackgroundColor="Transparent" 
+                         RelativeLayout.XConstraint="{ConstraintExpression Type=RelativeToParent, Property=Width, Factor=0}"
+                         RelativeLayout.YConstraint="{ConstraintExpression Type=RelativeToParent, Property=Height, Factor=0}"  />
+                     
+         
+            
+            
+        
+            <Grid BackgroundColor="#30000000" RelativeLayout.YConstraint="{ConstraintExpression Type=RelativeToParent, Property=Height, Factor=0.05, Constant=30}">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="Auto" />
+                    <ColumnDefinition Width="*" />
+                </Grid.ColumnDefinitions>
+
+                <Grid Grid.Column="1" WidthRequest="230" 
+                     >
+                    <ListView x:Name="MenuListView" BackgroundColor="White" IsVisible="False" ItemSelected="OnOptionSelected"  
+          VerticalOptions="Start" Margin="-6,0,0,0">
+                        <ListView.ItemsSource>
+                            <x:Array Type="{x:Type x:String}">
+                                <x:String>Cuenta</x:String>
+                                <x:String>Inicio</x:String>
+                                <x:String>Bus</x:String>
+                                <x:String>Reserva</x:String>
+                                <x:String>Anuncios</x:String>
+                                <x:String>Salir</x:String>
+                            </x:Array>
+                        </ListView.ItemsSource>
+                        <ListView.ItemTemplate>
+                            <DataTemplate>
+                                <ViewCell>
+                                    <Label Text="{Binding .}" TextColor="Black" FontSize="19" />
+                                </ViewCell>
+                            </DataTemplate>
+                        </ListView.ItemTemplate>
+                    </ListView>
+
+                </Grid>
+
+
+            </Grid>
+        </RelativeLayout>
+    </ContentPage.Content>
+</ContentPage>

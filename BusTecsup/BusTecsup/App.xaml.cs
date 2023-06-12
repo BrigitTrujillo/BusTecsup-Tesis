@@ -10,7 +10,7 @@ namespace BusTecsup
         {
             InitializeComponent();
 
-            MainPage = new MainPage();
+            MainPage = new Views.Tabbed.ContainerTabbedPage();
         }
 
         protected override void OnStart()
