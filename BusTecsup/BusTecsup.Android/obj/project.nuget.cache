@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "8+4ZcB1q9EKH4OdGmCx6o3Uay5bl1VOsNITj1/bLw+wVIKN5hWiMu69Q8YSaaj/vf8wzuvweRtOivoVtQgduog==",
+  "dgSpecHash": "g3krK+ZHnOeXdTzwVKDo6fVAhjJdE8jtuQS5lF0P1lsRur3IxZYrhpHelCe6R6e/xTDL1lMpUM00GRwdRrCzVg==",
   "success": true,
-  "projectFilePath": "C:\\Users\\BRIGIT\\source\\repos\\BusTecsup\\BusTecsup\\BusTecsup.Android\\BusTecsup.Android.csproj",
+  "projectFilePath": "C:\\Users\\BRIGIT\\source\\repos\\BusTecsup-Tesis1\\BusTecsup\\BusTecsup.Android\\BusTecsup.Android.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\BRIGIT\\.nuget\\packages\\system.numerics.vectors\\4.5.0\\system.numerics.vectors.4.5.0.nupkg.sha512",
     "C:\\Users\\BRIGIT\\.nuget\\packages\\xamarin.androidx.activity\\1.2.4.1\\xamarin.androidx.activity.1.2.4.1.nupkg.sha512",

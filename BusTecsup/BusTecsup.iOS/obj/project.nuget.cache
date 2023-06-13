@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "D8KqKfukkL5kySqXHMZkgQ/OobAXAoxHlj6p5EUFyTgt806UEhblAU3S5YUKKKpOoXgNQQ7bf6HTpUnks0qkQQ==",
+  "dgSpecHash": "3rXSIXae5WZ2T1wY6v7gSBZgZw7ePAdxq49C7Ihesjpy/UxdJgDmw5C7Ubmz2odJTf+06/WO95Ymp7UbZlkltw==",
   "success": true,
-  "projectFilePath": "C:\\Users\\BRIGIT\\source\\repos\\BusTecsup\\BusTecsup\\BusTecsup.iOS\\BusTecsup.iOS.csproj",
+  "projectFilePath": "C:\\Users\\BRIGIT\\source\\repos\\BusTecsup-Tesis1\\BusTecsup\\BusTecsup.iOS\\BusTecsup.iOS.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\BRIGIT\\.nuget\\packages\\system.numerics.vectors\\4.5.0\\system.numerics.vectors.4.5.0.nupkg.sha512",
     "C:\\Users\\BRIGIT\\.nuget\\packages\\xamarin.essentials\\1.7.0\\xamarin.essentials.1.7.0.nupkg.sha512",
