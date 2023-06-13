@@ -1,5 +1,6 @@
 ﻿<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:local="clr-namespace:BusTecsup.Views.Tabbed"
              x:Class="BusTecsup.Views.Tabbed.Inicio"
              >
     <ContentPage.Content>
@@ -35,22 +36,34 @@
 
                 <Grid Grid.Column="1" WidthRequest="230" 
                      >
-                    <ListView x:Name="MenuListView" BackgroundColor="White" IsVisible="False" ItemSelected="OnOptionSelected"  
+                    <ListView x:Name="MenuListView" BackgroundColor="White" IsVisible="False" ItemSelected="OnOptionSelected"
           VerticalOptions="Start" Margin="-6,0,0,0">
                         <ListView.ItemsSource>
-                            <x:Array Type="{x:Type x:String}">
-                                <x:String>Cuenta</x:String>
-                                <x:String>Inicio</x:String>
-                                <x:String>Bus</x:String>
-                                <x:String>Reserva</x:String>
-                                <x:String>Anuncios</x:String>
-                                <x:String>Salir</x:String>
+                            <x:Array Type="{x:Type local:MenuItem}">
+                                <local:MenuItem Text="Cuenta" ImageSource="icon_cuenta.png"/>
+                                
+                                <local:MenuItem Text="Inicio" ImageSource="icon_home.png" />
+                                <local:MenuItem Text="Bus" ImageSource="icon_bus.png" />
+                                <local:MenuItem Text="Reserva" ImageSource="icon_reserva.png" />
+                                <local:MenuItem Text="Anuncios" ImageSource="icon_notificacion.png" />
+                                <local:MenuItem Text="Salir" ImageSource="salir.png" />
                             </x:Array>
                         </ListView.ItemsSource>
                         <ListView.ItemTemplate>
                             <DataTemplate>
                                 <ViewCell>
-                                    <Label Text="{Binding .}" TextColor="Black" FontSize="19" />
+                                    <Grid Padding="10">
+                                        <Grid.ColumnDefinitions>
+                                            <ColumnDefinition Width="Auto" />
+                                            <ColumnDefinition Width="*" />
+                                        </Grid.ColumnDefinitions>
+
+                                        <!-- Icono -->
+                                        <Image Source="{Binding ImageSource}" HeightRequest="50" WidthRequest="50" />
+
+                                        <!-- Texto -->
+                                        <Label Text="{Binding Text}" TextColor="Black" FontSize="19" Grid.Column="1" VerticalOptions="Center" Margin="20,0,0,0" />
+                                    </Grid>
                                 </ViewCell>
                             </DataTemplate>
                         </ListView.ItemTemplate>

@@ -34,6 +34,12 @@ namespace BusTecsup.Views.Tabbed
             MenuListView.IsVisible = false;
         }
 
+        public class MenuItem
+        {
+            public string Text { get; set; }
+            public string ImageSource { get; set; }
+        }
+
 
 
 
