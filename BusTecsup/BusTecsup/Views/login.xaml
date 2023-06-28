@@ -25,6 +25,12 @@
 
             </Grid>
             <Image Source="bus.png" Grid.Row="1" HorizontalOptions="Center" VerticalOptions="Center" TranslationY="-70" WidthRequest="360"  HeightRequest="190" />
+            <ImageButton Source="google.png"
+                    HorizontalOptions="Center"
+                    VerticalOptions="CenterAndExpand"
+                    Clicked="OnGoogleLoginClicked" />
+
+          
 
             <Frame x:Name="myFrame" Grid.Row="2" Grid.RowSpan="2" HorizontalOptions="Center" VerticalOptions="Start" Margin="0,-150,0,0" WidthRequest="360" HeightRequest="55" BorderColor="#E0EFFE" CornerRadius="9" Padding="0" BackgroundColor="#E0EFFE">
                 <Image Source="google.png" HorizontalOptions="Center" VerticalOptions="Center" Aspect="AspectFill" HeightRequest="{Binding HeightRequest, Source={x:Reference myFrame}}" />
