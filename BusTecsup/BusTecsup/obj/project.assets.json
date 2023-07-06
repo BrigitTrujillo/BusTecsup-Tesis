@@ -61,7 +61,7 @@
           "lib/netstandard1.6/Xamarin.Auth.dll": {}
         }
       },
-      "Xamarin.Essentials/1.7.6": {
+      "Xamarin.Essentials/1.7.7": {
         "type": "package",
         "dependencies": {
           "System.Numerics.Vectors": "4.5.0"
@@ -351,10 +351,10 @@
         "xamarin.auth.nuspec"
       ]
     },
-    "Xamarin.Essentials/1.7.6": {
-      "sha512": "Le5qvBRXvL9c5of/3Si+13mdJ9+2hjQi0vFQ2sOLH7N2CZx7ATtfGF10oJiYF0zFzBEbdVzdBCWYwZgjUp9+YQ==",
+    "Xamarin.Essentials/1.7.7": {
+      "sha512": "vcRWRCO3yK1fCbcUIMVgV09x7z9SbLNhw4Tt2OYfps+YDgmGaDfw4Qn3uEKQm9LPV0S0PDklPSJT3R+7mtix/w==",
       "type": "package",
-      "path": "xamarin.essentials/1.7.6",
+      "path": "xamarin.essentials/1.7.7",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
@@ -389,7 +389,7 @@
         "lib/xamarinwatchos10/Xamarin.Essentials.pdb",
         "lib/xamarinwatchos10/Xamarin.Essentials.xml",
         "readme.txt",
-        "xamarin.essentials.1.7.6.nupkg.sha512",
+        "xamarin.essentials.1.7.7.nupkg.sha512",
         "xamarin.essentials.nuspec"
       ]
     },
@@ -617,7 +617,7 @@
       "NETStandard.Library >= 2.0.3",
       "Newtonsoft.Json >= 13.0.3",
       "Xamarin.Auth >= 1.7.0",
-      "Xamarin.Essentials >= 1.7.6",
+      "Xamarin.Essentials >= 1.7.7",
       "Xamarin.Forms >= 5.0.0.2578"
     ]
   },
@@ -628,11 +628,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Usuario\\Source\\Repos\\BusTecsup-Tesis\\BusTecsup\\BusTecsup\\BusTecsup.csproj",
+      "projectUniqueName": "C:\\Users\\Usuario\\source\\repos\\BusTecsup-Tesis\\BusTecsup\\BusTecsup\\BusTecsup.csproj",
       "projectName": "BusTecsup",
-      "projectPath": "C:\\Users\\Usuario\\Source\\Repos\\BusTecsup-Tesis\\BusTecsup\\BusTecsup\\BusTecsup.csproj",
+      "projectPath": "C:\\Users\\Usuario\\source\\repos\\BusTecsup-Tesis\\BusTecsup\\BusTecsup\\BusTecsup.csproj",
       "packagesPath": "C:\\Users\\Usuario\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Usuario\\Source\\Repos\\BusTecsup-Tesis\\BusTecsup\\BusTecsup\\obj\\",
+      "outputPath": "C:\\Users\\Usuario\\source\\repos\\BusTecsup-Tesis\\BusTecsup\\BusTecsup\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -682,7 +682,7 @@
           },
           "Xamarin.Essentials": {
             "target": "Package",
-            "version": "[1.7.6, )"
+            "version": "[1.7.7, )"
           },
           "Xamarin.Forms": {
             "target": "Package",

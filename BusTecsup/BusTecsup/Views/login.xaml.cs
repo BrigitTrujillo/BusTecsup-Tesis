@@ -1,76 +1,64 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
 using System.ComponentModel;
-using System.Net.Http;
-using System.Threading.Tasks;
-using BusTecsup.Models;
-using Newtonsoft.Json;
 using Xamarin.Forms;
 using Xamarin.Forms.Xaml;
 using Xamarin.Auth;
-
-
+using BusTecsup.Models;
+using BusTecsup.Views.Tabbed;
+using BusTecsup.ViewModels;
 
 namespace BusTecsup.Views
 {
     [XamlCompilation(XamlCompilationOptions.Compile)]
     public partial class login : ContentPage
     {
+        private readonly IGoogleManager _googleManager;
+
         public login()
         {
             InitializeComponent();
+            _googleManager = DependencyService.Get<IGoogleManager>();
         }
-        private void OnGoogleLoginClicked(object sender, EventArgs e)
+
+        private void btnLogin_Clicked(object sender, EventArgs e)
         {
-            var authenticator = new OAuth2Authenticator
-                         (
-                           "1053548895188-skpqa3tu6idpdv9r91oo3qe1h45301o8.apps.googleusercontent.com",
-                           "email profile",
-                            new System.Uri("https://accounts.google.com/o/oauth2/auth"),
-                            new System.Uri("bus.bustecsup://oauth2redirect")
-                          );
+            _googleManager.Login(OnLoginComplete);
+        }
 
-            authenticator.AllowCancel = true;
-
-            var presenter = new Xamarin.Auth.Presenters.OAuthLoginPresenter();
-            presenter.Login(authenticator);
-
-            authenticator.Completed += async (senders, obj) =>
+        private void OnLoginComplete(GoogleUser googleUser, string message)
+        {
+            if (googleUser != null)
             {
-                if (obj.IsAuthenticated)
-                {
-                    var clientData = new HttpClient();
+                // Guardar la sesión del usuario
+                App.Current.Properties["IsLoggedIn"] = true;
+                App.Current.Properties["UserName"] = googleUser.Name;
+                App.Current.Properties["UserEmail"] = googleUser.Email;
+                App.Current.Properties["UserProfilePicture"] = googleUser.Picture;
+                App.Current.SavePropertiesAsync();
 
-                    //call google api to fetch logged in user profile info 
-                    var resData = await clientData.GetAsync("https://www.googleapis.com/oauth2/v3/userinfo?access_token=" + obj.Account.Properties["access_token"]);
-                    var jsonData = await resData.Content.ReadAsStringAsync();
+                // modificar par a inicio
+               
 
-                    // deserlize the jsondata and intilize in GoogleAuthClass
-                    GoogleAuthClass googleObject = JsonConvert.DeserializeObject<GoogleAuthClass>(jsonData);
-
-                    //you can access following property after login
-                    string email = googleObject.email;
-                    string photo = googleObject.picture;
-                    string name = googleObject.name;
-
-                    // Navigate to the home page
-                    await Navigation.PushAsync(new Views.Tabbed.Inicio());
-                }
-                else
-                {
-                    //Authentication fail
-                    // write the code to handle when auth failed
-                }
-            };
-            authenticator.Error += onAuthError;
+                var inicioPage = new Views.Tabbed.ContainerTabbedPage();
+                inicioPage.BindingContext = new CuentaViewModel(googleUser);
+                Application.Current.MainPage = inicioPage;
+            }
+            else
+            {
+                DisplayAlert("Message", message, "Ok");
+            }
         }
 
-        private void onAuthError(object sender, AuthenticatorErrorEventArgs e)
+        private void btnLogout_Clicked(object sender, EventArgs e)
         {
-            DisplayAlert("Google Authentication Error", e.Message, "OK");
+            _googleManager.Logout();
+
+            // Limpiar las propiedades de sesión del usuario
+            App.Current.Properties["IsLoggedIn"] = false;
+            App.Current.Properties["UserName"] = "";
+            App.Current.Properties["UserEmail"] = "";
+            App.Current.Properties["UserProfilePicture"] = "";
+            App.Current.SavePropertiesAsync();
         }
     }
-
 }

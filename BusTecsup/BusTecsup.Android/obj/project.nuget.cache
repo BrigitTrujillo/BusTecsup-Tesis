@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "CwiVLF0DgtIGecUEDFWsD+QXoQEEUk+MBQcmqwVPGBCwd98jdikMY61c3BcSNPHhCQ+1sMH/t2L6/Fy9xUG+2g==",
+  "dgSpecHash": "BhSbMdTDsScEFxnO7wtwMaEc51mV5kXCkU1+3GZwbGVu31s/+9DOxy/PhJlc2bFMa7AnMZ5lQH5H27lgT2sKKw==",
   "success": true,
   "projectFilePath": "C:\\Users\\Usuario\\source\\repos\\BusTecsup-Tesis\\BusTecsup\\BusTecsup.Android\\BusTecsup.Android.csproj",
   "expectedPackageFiles": [
@@ -87,10 +87,17 @@
     "C:\\Users\\Usuario\\.nuget\\packages\\xamarin.androidx.viewpager\\1.0.0.8\\xamarin.androidx.viewpager.1.0.0.8.nupkg.sha512",
     "C:\\Users\\Usuario\\.nuget\\packages\\xamarin.androidx.viewpager2\\1.0.0.10\\xamarin.androidx.viewpager2.1.0.0.10.nupkg.sha512",
     "C:\\Users\\Usuario\\.nuget\\packages\\xamarin.auth\\1.7.0\\xamarin.auth.1.7.0.nupkg.sha512",
-    "C:\\Users\\Usuario\\.nuget\\packages\\xamarin.essentials\\1.7.6\\xamarin.essentials.1.7.6.nupkg.sha512",
+    "C:\\Users\\Usuario\\.nuget\\packages\\xamarin.build.download\\0.10.0\\xamarin.build.download.0.10.0.nupkg.sha512",
+    "C:\\Users\\Usuario\\.nuget\\packages\\xamarin.essentials\\1.7.7\\xamarin.essentials.1.7.7.nupkg.sha512",
     "C:\\Users\\Usuario\\.nuget\\packages\\xamarin.forms\\5.0.0.2578\\xamarin.forms.5.0.0.2578.nupkg.sha512",
     "C:\\Users\\Usuario\\.nuget\\packages\\xamarin.google.android.material\\1.4.0.2\\xamarin.google.android.material.1.4.0.2.nupkg.sha512",
-    "C:\\Users\\Usuario\\.nuget\\packages\\xamarin.google.guava.listenablefuture\\1.0.0.2\\xamarin.google.guava.listenablefuture.1.0.0.2.nupkg.sha512"
+    "C:\\Users\\Usuario\\.nuget\\packages\\xamarin.google.guava.listenablefuture\\1.0.0.2\\xamarin.google.guava.listenablefuture.1.0.0.2.nupkg.sha512",
+    "C:\\Users\\Usuario\\.nuget\\packages\\xamarin.googleplayservices.auth\\118.0.0\\xamarin.googleplayservices.auth.118.0.0.nupkg.sha512",
+    "C:\\Users\\Usuario\\.nuget\\packages\\xamarin.googleplayservices.auth.api.phone\\117.4.0\\xamarin.googleplayservices.auth.api.phone.117.4.0.nupkg.sha512",
+    "C:\\Users\\Usuario\\.nuget\\packages\\xamarin.googleplayservices.auth.base\\117.1.0\\xamarin.googleplayservices.auth.base.117.1.0.nupkg.sha512",
+    "C:\\Users\\Usuario\\.nuget\\packages\\xamarin.googleplayservices.base\\117.2.1\\xamarin.googleplayservices.base.117.2.1.nupkg.sha512",
+    "C:\\Users\\Usuario\\.nuget\\packages\\xamarin.googleplayservices.basement\\117.2.1\\xamarin.googleplayservices.basement.117.2.1.nupkg.sha512",
+    "C:\\Users\\Usuario\\.nuget\\packages\\xamarin.googleplayservices.tasks\\117.0.2\\xamarin.googleplayservices.tasks.117.0.2.nupkg.sha512"
   ],
   "logs": []
 }

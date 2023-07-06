@@ -7,6 +7,34 @@
             <Label Text="Welcome to Xamarin.Forms!"
                 VerticalOptions="CenterAndExpand" 
                 HorizontalOptions="CenterAndExpand" />
+
+            <ListView ItemsSource="{Binding ListDetails}" Background="WhiteSmoke" HasUnevenRows="True">
+                <ListView.ItemTemplate>
+                    <DataTemplate>
+                        <ViewCell>
+                            <Grid Padding="4" Margin="4">
+                                <Grid.RowDefinitions>
+                                    <RowDefinition Height="*" ></RowDefinition>
+                                    <!-- Cambiamos la altura a "*" para que ocupe todo el espacio disponible -->
+                                </Grid.RowDefinitions>
+                                <Grid.ColumnDefinitions>
+                                    <ColumnDefinition Width="*" ></ColumnDefinition>
+                                    <!-- Cambiamos el ancho a "*" para que ocupe todo el espacio disponible -->
+                                </Grid.ColumnDefinitions>
+                                <Frame IsClippedToBounds="True" Grid.Row="0" HasShadow="True" Padding="0" BackgroundColor="White">
+
+                                    <StackLayout Orientation="Horizontal">
+                                        <Button Text="Botón 1" BackgroundColor="Blue" TextColor="White" />
+                                        <Button Text="Botón 2" BackgroundColor="Blue" TextColor="White" />
+                                    </StackLayout>
+                                    
+                                    
+                                </Frame>
+                            </Grid>
+                        </ViewCell>
+                    </DataTemplate>
+                </ListView.ItemTemplate>
+            </ListView>
         </StackLayout>
     </ContentPage.Content>
 </ContentPage>
