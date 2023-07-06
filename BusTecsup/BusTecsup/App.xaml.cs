@@ -1,4 +1,5 @@
-﻿using System;
+﻿using BusTecsup.Views;
+using System;
 using Xamarin.Forms;
 using Xamarin.Forms.Xaml;
 
@@ -10,7 +11,7 @@ namespace BusTecsup
         {
             InitializeComponent();
 
-            MainPage = new Views.Tabbed.ContainerTabbedPage();
+            MainPage = new Views.login();
         }
 
         protected override void OnStart()

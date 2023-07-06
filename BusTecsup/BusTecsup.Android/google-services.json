@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "106905926049",
+    "project_id": "bustecsup",
+    "storage_bucket": "bustecsup.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:106905926049:android:930f4cb9e2655be9c3b3e0",
+        "android_client_info": {
+          "package_name": "bus.bustecsup"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "106905926049-ktv15ms41l4mjvvqs3kjpeo1qbv23rp3.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "bus.bustecsup",
+            "certificate_hash": "2606f2345c1e3ceb9190bb290bb7038c8a565fe6"
+          }
+        },
+        {
+          "client_id": "106905926049-ffus7be1ju5vtj2usnp4dt64uihv91o8.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBtrdDZlKM2cxso7moEmRlLJxfRtLWXjJ4"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "106905926049-ffus7be1ju5vtj2usnp4dt64uihv91o8.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
