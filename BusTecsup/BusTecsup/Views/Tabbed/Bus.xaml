@@ -1,40 +1,104 @@
-﻿<?xml version="1.0" encoding="utf-8" ?>
-<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+﻿<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-             x:Class="BusTecsup.Views.Tabbed.Bus">
+             xmlns:local="clr-namespace:BusTecsup.Views.Tabbed"
+             x:Class="BusTecsup.Views.Tabbed.Bus"
+             >
     <ContentPage.Content>
-        <StackLayout>
-            <Label Text="Welcome to Xamarin.Forms!"
-                VerticalOptions="CenterAndExpand" 
-                HorizontalOptions="CenterAndExpand" />
+        <RelativeLayout>
 
-            <ListView ItemsSource="{Binding ListDetails}" Background="WhiteSmoke" HasUnevenRows="True">
-                <ListView.ItemTemplate>
-                    <DataTemplate>
-                        <ViewCell>
-                            <Grid Padding="4" Margin="4">
-                                <Grid.RowDefinitions>
-                                    <RowDefinition Height="*" ></RowDefinition>
-                                    <!-- Cambiamos la altura a "*" para que ocupe todo el espacio disponible -->
-                                </Grid.RowDefinitions>
-                                <Grid.ColumnDefinitions>
-                                    <ColumnDefinition Width="*" ></ColumnDefinition>
-                                    <!-- Cambiamos el ancho a "*" para que ocupe todo el espacio disponible -->
-                                </Grid.ColumnDefinitions>
-                                <Frame IsClippedToBounds="True" Grid.Row="0" HasShadow="True" Padding="0" BackgroundColor="White">
+            <StackLayout >
+                <Frame BackgroundColor="#6DD5FA" Padding="40" CornerRadius="0" VerticalOptions="FillAndExpand">
+                    <StackLayout >
+                        
+                        <Frame BackgroundColor="#D6F4FF" Margin="10" Padding="14" CornerRadius="10" HorizontalOptions="CenterAndExpand">
+                            <Label Text="Ruta: Puente Nuevo" TextColor="Black" FontSize="Small" HorizontalOptions="Center" VerticalOptions="StartAndExpand" Padding="10,10,140,1" />
+                        </Frame>
+                        <Label Text="Hora: 7: 15" FontSize="16"  TextColor="Black" Padding="40,10,40,0"/>
+                        <Label Text="Días : Lunes-Viernes" FontSize="16"  TextColor="Black" Padding="40,0,30,0"/>
+                        <Frame BackgroundColor="#D6F4FF" Padding="14" CornerRadius="10" HorizontalOptions="CenterAndExpand">
+                            <Label Text="Ubicación Tiempo Real" TextColor="Black" FontSize="Small" HorizontalOptions="Center" VerticalOptions="StartAndExpand" Padding="20,10,160,1" />
+                        </Frame>
+                    </StackLayout>
+                </Frame>
 
-                                    <StackLayout Orientation="Horizontal">
-                                        <Button Text="Botón 1" BackgroundColor="Blue" TextColor="White" />
-                                        <Button Text="Botón 2" BackgroundColor="Blue" TextColor="White" />
-                                    </StackLayout>
-                                    
-                                    
-                                </Frame>
-                            </Grid>
-                        </ViewCell>
-                    </DataTemplate>
-                </ListView.ItemTemplate>
-            </ListView>
-        </StackLayout>
+                <Frame BackgroundColor="#D6F4FF" Padding="40" CornerRadius="0" VerticalOptions="FillAndExpand">
+                    <StackLayout>
+                        <Frame BackgroundColor="#6DD5FA" Padding="14" CornerRadius="10" HorizontalOptions="CenterAndExpand">
+                            <Label Text="RUTA PUENTE NUEVO-CAMPUS" TextColor="Black" FontSize="13" HorizontalOptions="Center" VerticalOptions="StartAndExpand" Padding="27,10,90,1" />
+                        </Frame>
+                        <Label Text="Hora: 7: 15" FontSize="16"  TextColor="Black" Padding="40,10,40,0"/>
+                        <Label Text="Días : Lunes-Viernes" FontSize="16"  TextColor="Black" Padding="40,0,30,0"/>
+                        <Frame BackgroundColor="#D6F4FF" Padding="14" CornerRadius="10" HorizontalOptions="CenterAndExpand">
+                            <Label Text="Ubicación Tiempo Real" TextColor="Black" FontSize="Small" HorizontalOptions="Center" VerticalOptions="StartAndExpand" Padding="10,20,160,1" />
+                        </Frame>
+                    </StackLayout>
+                </Frame>
+            </StackLayout>
+
+            <BoxView BackgroundColor="#28B2FF"   HeightRequest="67"   RelativeLayout.XConstraint="{ConstraintExpression Type=RelativeToParent, Property=Width, Factor=0}"
+                RelativeLayout.YConstraint="{ConstraintExpression Type=RelativeToParent, Property=Height, Factor=0}" 
+                RelativeLayout.WidthConstraint="{ConstraintExpression Type=RelativeToParent, Property=Width}"
+                />
+
+
+            <Image Source="puntos.png" Aspect="AspectFit" HeightRequest="50" WidthRequest="35" BackgroundColor="Transparent"
+       RelativeLayout.XConstraint="{ConstraintExpression Type=RelativeToParent, Property=Width, Factor=1, Constant=-50}"
+       RelativeLayout.YConstraint="{ConstraintExpression Type=RelativeToParent, Property=Height, Factor=0}"
+               />
+
+            <ImageButton Source="list.png" Clicked="OnMenuButtonClicked" HeightRequest="55" WidthRequest="70" BackgroundColor="Transparent" 
+                         RelativeLayout.XConstraint="{ConstraintExpression Type=RelativeToParent, Property=Width, Factor=0}"
+                         RelativeLayout.YConstraint="{ConstraintExpression Type=RelativeToParent, Property=Height, Factor=0}"  />
+
+
+
+
+
+            <Grid BackgroundColor="#30000000" RelativeLayout.YConstraint="{ConstraintExpression Type=RelativeToParent, Property=Height, Factor=0.05, Constant=30}">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="Auto" />
+                    <ColumnDefinition Width="*" />
+                </Grid.ColumnDefinitions>
+
+                <Grid Grid.Column="1" WidthRequest="230" 
+                     >
+                    <ListView x:Name="MenuListView" BackgroundColor="White" IsVisible="False" ItemSelected="OnOptionSelected"
+          VerticalOptions="Start" Margin="-6,0,0,0">
+                        <ListView.ItemsSource>
+                            <x:Array Type="{x:Type local:MenuItem}">
+                                <local:MenuItem Text="Cuenta" ImageSource="icon_cuenta.png"/>
+
+                                <local:MenuItem Text="Inicio" ImageSource="icon_home.png" />
+                                <local:MenuItem Text="Bus" ImageSource="icon_bus.png" />
+                                <local:MenuItem Text="Reserva" ImageSource="icon_reserva.png" />
+                                <local:MenuItem Text="Anuncios" ImageSource="icon_notificacion.png" />
+                                <local:MenuItem Text="Salir" ImageSource="salir.png" />
+                            </x:Array>
+                        </ListView.ItemsSource>
+                        <ListView.ItemTemplate>
+                            <DataTemplate>
+                                <ViewCell>
+                                    <Grid Padding="10">
+                                        <Grid.ColumnDefinitions>
+                                            <ColumnDefinition Width="Auto" />
+                                            <ColumnDefinition Width="*" />
+                                        </Grid.ColumnDefinitions>
+
+                                        <!-- Icono -->
+                                        <Image Source="{Binding ImageSource}" HeightRequest="50" WidthRequest="50" />
+
+                                        <!-- Texto -->
+                                        <Label Text="{Binding Text}" TextColor="Black" FontSize="19" Grid.Column="1" VerticalOptions="Center" Margin="20,0,0,0" />
+                                    </Grid>
+                                </ViewCell>
+                            </DataTemplate>
+                        </ListView.ItemTemplate>
+                    </ListView>
+
+                </Grid>
+
+
+            </Grid>
+        </RelativeLayout>
     </ContentPage.Content>
 </ContentPage>

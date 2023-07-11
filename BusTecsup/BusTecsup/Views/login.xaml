@@ -4,8 +4,8 @@
              x:Class="BusTecsup.Views.login"
               x:Name="loginPage">
     <ContentPage.Resources>
-       
-        
+
+
         <ResourceDictionary>
             <Color x:Key="BackgroundColor">#339FFF</Color>
         </ResourceDictionary>
@@ -26,27 +26,24 @@
 
             </Grid>
             <Image Source="bus.png" Grid.Row="1" HorizontalOptions="Center" VerticalOptions="Center" TranslationY="-70" WidthRequest="360"  HeightRequest="190" />
-            
-          
 
-            <Frame x:Name="myFrame" Grid.Row="2" Grid.RowSpan="2" HorizontalOptions="Center" VerticalOptions="Start" Margin="0,-150,0,0" WidthRequest="360" HeightRequest="55" BorderColor="#E0EFFE" CornerRadius="9" Padding="0" BackgroundColor="#E0EFFE">
-                <Image Source="google.png" HorizontalOptions="Center" VerticalOptions="Center" Aspect="AspectFill" HeightRequest="{Binding HeightRequest, Source={x:Reference myFrame}}" />
-            </Frame>
+            <ImageButton x:Name="btnLogin" Grid.Row="2" Grid.RowSpan="2" HorizontalOptions="Center" VerticalOptions="Start"
+             Margin="0,-150,0,0" WidthRequest="360" HeightRequest="55" BorderColor="#E0EFFE"
+             CornerRadius="9" Padding="0" BackgroundColor="#E0EFFE" Clicked="btnLogin_Clicked"   >
+                <ImageButton.Source>
+                    <FileImageSource File="google.png" />
+                </ImageButton.Source>
+            </ImageButton>
 
 
             <Grid Grid.Row="4" VerticalOptions="End">
-                <StackLayout Spacing="0">
-                   
-
-                    <Button Text="Login with Gmail" CornerRadius="6" BackgroundColor="Tomato" TextColor="White" 
-                        FontAttributes="Bold" FontSize="20" Margin="0,8,0,0" x:Name="btnLogin" Clicked="btnLogin_Clicked"/>
-
-                    <Button Text="Logout" CornerRadius="6" BackgroundColor="Tomato" TextColor="White" 
-                        FontAttributes="Bold" FontSize="20" Margin="0,8,0,0" x:Name="btnLogout" Clicked="btnLogout_Clicked"/>
-                </StackLayout>
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="200" />
+                </Grid.RowDefinitions>
+                <Image Source="vector2.png" HorizontalOptions="Fill" VerticalOptions="Fill" Aspect="AspectFill" />
             </Grid>
 
-          
+
 
         </Grid>
     </ContentPage.Content>

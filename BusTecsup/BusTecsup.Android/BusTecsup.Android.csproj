@@ -84,6 +84,10 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="Assets\google-services.json" />
+    <AndroidResource Include="Resources\drawable\reservado.png" />
+    <AndroidResource Include="Resources\drawable\rojo.png" />
+    <AndroidResource Include="Resources\drawable\azul.png" />
+    <AndroidResource Include="Resources\drawable\perfil.png" />
     <None Include="google-services.json" />
     <None Include="Resources\AboutResources.txt" />
     <None Include="Assets\AboutAssets.txt" />

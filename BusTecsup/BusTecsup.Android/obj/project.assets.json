@@ -4860,6 +4860,14 @@
             "target": "Package",
             "version": "[13.0.3, )"
           },
+          "Newtonsoft.Json": {
+            "target": "Package",
+            "version": "[13.0.3, )"
+          },
+          "Xamarin.Auth": {
+            "target": "Package",
+            "version": "[1.7.0, )"
+          },
           "Xamarin.Auth": {
             "target": "Package",
             "version": "[1.7.0, )"
@@ -4868,9 +4876,21 @@
             "target": "Package",
             "version": "[1.7.7, )"
           },
+          "Xamarin.Essentials": {
+            "target": "Package",
+            "version": "[1.7.7, )"
+          },
           "Xamarin.Forms": {
             "target": "Package",
             "version": "[5.0.0.2578, )"
+          },
+          "Xamarin.Forms": {
+            "target": "Package",
+            "version": "[5.0.0.2578, )"
+          },
+          "Xamarin.GooglePlayServices.Auth": {
+            "target": "Package",
+            "version": "[118.0.0, )"
           },
           "Xamarin.GooglePlayServices.Auth": {
             "target": "Package",

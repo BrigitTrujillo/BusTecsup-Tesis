@@ -11,7 +11,7 @@
         <locals:Inicio Title="Incio" IconImageSource="Icon_home" />
         <locals:Bus Title="Bus" IconImageSource="Icon_bus" />
         <locals:Reserva Title="Reserva" IconImageSource="Icon_reserva" />
-        <locals:Notificacion Title="Notificacion" IconImageSource="Icon_notificacion" />
+        <locals:Notificacion Title="Perfil" IconImageSource="perfil" />
     </TabbedPage.Children>
 
 </TabbedPage>

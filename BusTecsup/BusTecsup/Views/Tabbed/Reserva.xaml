@@ -1,12 +1,407 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-             x:Class="BusTecsup.Views.Tabbed.Reserva">
+              xmlns:local="clr-namespace:BusTecsup.Views.Tabbed"
+             x:Class="BusTecsup.Views.Tabbed.Reserva"
+              BackgroundColor="White">
     <ContentPage.Content>
-        <StackLayout>
-            <Label Text="Welcome to Xamarin.Forms!"
-                VerticalOptions="CenterAndExpand" 
-                HorizontalOptions="CenterAndExpand" />
-        </StackLayout>
+        <RelativeLayout>
+
+
+            <Grid VerticalOptions="CenterAndExpand" HorizontalOptions="StartAndExpand" HeightRequest="60" WidthRequest="390" Margin="10,70,75,10" >
+                <Frame BackgroundColor="#D6F4FF" CornerRadius="5">
+                    <Label Text="Ruta: " FontSize="16" TextColor="#000000" HorizontalOptions="Start" VerticalOptions="CenterAndExpand" HorizontalTextAlignment="Start" />
+                </Frame>
+            </Grid>
+            <!-- Label "Ruta" -->
+
+
+            <Grid VerticalOptions="Center" HorizontalOptions="StartAndExpand" Margin="25,87,5,0" Padding="50" HeightRequest="316">
+                <Grid.RowDefinitions>
+                    <!-- Filas de asientos -->
+                    <RowDefinition Height="30" />
+                    <RowDefinition Height="30" />
+                    <RowDefinition Height="30" />
+                    <RowDefinition Height="30" />
+                    <RowDefinition Height="30" />
+                    <RowDefinition Height="30" />
+                    <RowDefinition Height="30" />
+                    <RowDefinition Height="30" />
+                    <RowDefinition Height="30" />
+                    <RowDefinition Height="30" />
+                    <RowDefinition Height="30" />
+                    <RowDefinition Height="30" />
+                </Grid.RowDefinitions>
+                <Grid.ColumnDefinitions>
+                    <!-- Columnas para los asientos -->
+                    <ColumnDefinition Width="43" />
+                    <ColumnDefinition Width="43" />
+                    <ColumnDefinition Width="43" />
+                    <ColumnDefinition Width="43" />
+                    <ColumnDefinition Width="43" />
+                </Grid.ColumnDefinitions>
+
+                <!-- Asientos -->
+                <Image x:Name="Asiento1" Source="azul" Grid.Row="0" Grid.Column="0">
+                    <Image.GestureRecognizers>
+                        <TapGestureRecognizer Tapped="AsientoTapped" />
+                    </Image.GestureRecognizers>
+                </Image>
+
+                <Image x:Name="Asiento2" Source="azul" Grid.Row="1" Grid.Column="0">
+                    <Image.GestureRecognizers>
+                        <TapGestureRecognizer Tapped="AsientoTapped" />
+                    </Image.GestureRecognizers>
+                </Image>
+
+                <Image x:Name="Asiento3" Source="azul" Grid.Row="2" Grid.Column="0">
+                    <Image.GestureRecognizers>
+                        <TapGestureRecognizer Tapped="AsientoTapped" />
+                    </Image.GestureRecognizers>
+                </Image>
+
+                <Image x:Name="Asiento4" Source="azul" Grid.Row="3" Grid.Column="0">
+                    <Image.GestureRecognizers>
+                        <TapGestureRecognizer Tapped="AsientoTapped" />
+                    </Image.GestureRecognizers>
+                </Image>
+
+                <Image x:Name="Asiento5" Source="azul" Grid.Row="4" Grid.Column="0">
+                    <Image.GestureRecognizers>
+                        <TapGestureRecognizer Tapped="AsientoTapped" />
+                    </Image.GestureRecognizers>
+                </Image>
+                <Image x:Name="Asiento6" Source="azul" Grid.Row="5" Grid.Column="0">
+                    <Image.GestureRecognizers>
+                        <TapGestureRecognizer Tapped="AsientoTapped" />
+                    </Image.GestureRecognizers>
+                </Image>
+
+                <Image x:Name="Asiento7" Source="azul" Grid.Row="6" Grid.Column="0">
+                    <Image.GestureRecognizers>
+                        <TapGestureRecognizer Tapped="AsientoTapped" />
+                    </Image.GestureRecognizers>
+                </Image>
+
+                <Image x:Name="Asiento8" Source="azul" Grid.Row="7" Grid.Column="0">
+                    <Image.GestureRecognizers>
+                        <TapGestureRecognizer Tapped="AsientoTapped" />
+                    </Image.GestureRecognizers>
+                </Image>
+
+                <Image x:Name="Asiento9" Source="azul" Grid.Row="8" Grid.Column="0">
+                    <Image.GestureRecognizers>
+                        <TapGestureRecognizer Tapped="AsientoTapped" />
+                    </Image.GestureRecognizers>
+                </Image>
+
+                <Image x:Name="Asiento10" Source="azul" Grid.Row="9" Grid.Column="0">
+                    <Image.GestureRecognizers>
+                        <TapGestureRecognizer Tapped="AsientoTapped" />
+                    </Image.GestureRecognizers>
+                </Image>
+                <Image x:Name="Asiento11" Source="rojo" Grid.Row="10" Grid.Column="0">
+                    <Image.GestureRecognizers>
+                        <TapGestureRecognizer Tapped="AsientoTapped" />
+                    </Image.GestureRecognizers>
+                </Image>
+
+                <Image x:Name="Asiento12" Source="rojo" Grid.Row="11" Grid.Column="0">
+                    <Image.GestureRecognizers>
+                        <TapGestureRecognizer Tapped="AsientoTapped" />
+                    </Image.GestureRecognizers>
+                </Image>
+
+
+
+
+
+                <!-- Asientos de otras columnas medio-->
+                <!-- Columna 2 -->
+                <Image x:Name="Asiento13" Source="azul" Grid.Row="0" Grid.Column="1">
+                    <Image.GestureRecognizers>
+                        <TapGestureRecognizer Tapped="AsientoTapped" />
+                    </Image.GestureRecognizers>
+                </Image>
+
+                <Image x:Name="Asiento15" Source="azul" Grid.Row="1" Grid.Column="1">
+                    <Image.GestureRecognizers>
+                        <TapGestureRecognizer Tapped="AsientoTapped" />
+                    </Image.GestureRecognizers>
+                </Image>
+
+                <Image x:Name="Asiento16" Source="azul" Grid.Row="2" Grid.Column="1">
+                    <Image.GestureRecognizers>
+                        <TapGestureRecognizer Tapped="AsientoTapped" />
+                    </Image.GestureRecognizers>
+                </Image>
+
+                <Image x:Name="Asiento17" Source="azul" Grid.Row="3" Grid.Column="1">
+                    <Image.GestureRecognizers>
+                        <TapGestureRecognizer Tapped="AsientoTapped" />
+                    </Image.GestureRecognizers>
+                </Image>
+
+                <Image x:Name="Asiento18" Source="azul" Grid.Row="4" Grid.Column="1">
+                    <Image.GestureRecognizers>
+                        <TapGestureRecognizer Tapped="AsientoTapped" />
+                    </Image.GestureRecognizers>
+                </Image>
+
+                <Image x:Name="Asiento19" Source="azul" Grid.Row="5" Grid.Column="1">
+                    <Image.GestureRecognizers>
+                        <TapGestureRecognizer Tapped="AsientoTapped" />
+                    </Image.GestureRecognizers>
+                </Image>
+
+                <Image x:Name="Asiento20" Source="azul" Grid.Row="6" Grid.Column="1">
+                    <Image.GestureRecognizers>
+                        <TapGestureRecognizer Tapped="AsientoTapped" />
+                    </Image.GestureRecognizers>
+                </Image>
+                <Image x:Name="Asiento21" Source="azul" Grid.Row="7" Grid.Column="1">
+                    <Image.GestureRecognizers>
+                        <TapGestureRecognizer Tapped="AsientoTapped" />
+                    </Image.GestureRecognizers>
+                </Image>
+
+                <Image x:Name="Asiento22" Source="azul" Grid.Row="8" Grid.Column="1">
+                    <Image.GestureRecognizers>
+                        <TapGestureRecognizer Tapped="AsientoTapped" />
+                    </Image.GestureRecognizers>
+                </Image>
+
+                <Image x:Name="Asiento23" Source="azul" Grid.Row="9" Grid.Column="1">
+                    <Image.GestureRecognizers>
+                        <TapGestureRecognizer Tapped="AsientoTapped" />
+                    </Image.GestureRecognizers>
+                </Image>
+
+                <Image x:Name="Asiento24" Source="rojo" Grid.Row="10" Grid.Column="1">
+                    <Image.GestureRecognizers>
+                        <TapGestureRecognizer Tapped="AsientoTapped" />
+                    </Image.GestureRecognizers>
+                </Image>
+                <Image x:Name="Asiento25" Source="rojo" Grid.Row="11" Grid.Column="1">
+                    <Image.GestureRecognizers>
+                        <TapGestureRecognizer Tapped="AsientoTapped" />
+                    </Image.GestureRecognizers>
+                </Image>
+
+
+
+                <!-- Añade más imágenes para los asientos de medio -->
+
+                <!-- Columna 3 -->
+                <Image x:Name="Asiento27" Source="azul" Grid.Row="0" Grid.Column="2">
+                    <Image.GestureRecognizers>
+                        <TapGestureRecognizer Tapped="AsientoTapped" />
+                    </Image.GestureRecognizers>
+                </Image>
+
+
+
+
+
+                <!-- Añade más imágenes para los asientos de la columna 3 aquí -->
+
+                <Image x:Name="Asiento28" Source="azul" Grid.Row="0" Grid.Column="3">
+                    <Image.GestureRecognizers>
+                        <TapGestureRecognizer Tapped="AsientoTapped" />
+                    </Image.GestureRecognizers>
+                </Image>
+                <Image x:Name="Asiento29" Source="azul" Grid.Row="1" Grid.Column="3">
+                    <Image.GestureRecognizers>
+                        <TapGestureRecognizer Tapped="AsientoTapped" />
+                    </Image.GestureRecognizers>
+                </Image>
+                <Image x:Name="Asiento30" Source="azul" Grid.Row="2" Grid.Column="3">
+                    <Image.GestureRecognizers>
+                        <TapGestureRecognizer Tapped="AsientoTapped" />
+                    </Image.GestureRecognizers>
+                </Image>
+                <Image x:Name="Asiento31" Source="azul" Grid.Row="3" Grid.Column="3">
+                    <Image.GestureRecognizers>
+                        <TapGestureRecognizer Tapped="AsientoTapped" />
+                    </Image.GestureRecognizers>
+                </Image>
+                <Image x:Name="Asiento32" Source="azul" Grid.Row="4" Grid.Column="3">
+                    <Image.GestureRecognizers>
+                        <TapGestureRecognizer Tapped="AsientoTapped" />
+                    </Image.GestureRecognizers>
+                </Image>
+                <Image x:Name="Asiento33" Source="azul" Grid.Row="5" Grid.Column="3">
+                    <Image.GestureRecognizers>
+                        <TapGestureRecognizer Tapped="AsientoTapped" />
+                    </Image.GestureRecognizers>
+                </Image>
+                <Image x:Name="Asiento34" Source="azul" Grid.Row="6" Grid.Column="3">
+                    <Image.GestureRecognizers>
+                        <TapGestureRecognizer Tapped="AsientoTapped" />
+                    </Image.GestureRecognizers>
+                </Image>
+                <Image x:Name="Asiento35" Source="azul" Grid.Row="7" Grid.Column="3">
+                    <Image.GestureRecognizers>
+                        <TapGestureRecognizer Tapped="AsientoTapped" />
+                    </Image.GestureRecognizers>
+                </Image>
+                <Image x:Name="Asiento36" Source="azul" Grid.Row="8" Grid.Column="3">
+                    <Image.GestureRecognizers>
+                        <TapGestureRecognizer Tapped="AsientoTapped" />
+                    </Image.GestureRecognizers>
+                </Image>
+                <Image x:Name="Asiento37" Source="azul" Grid.Row="9" Grid.Column="3">
+                    <Image.GestureRecognizers>
+                        <TapGestureRecognizer Tapped="AsientoTapped" />
+                    </Image.GestureRecognizers>
+                </Image>
+
+                <Image x:Name="Asiento38" Source="rojo" Grid.Row="10" Grid.Column="3">
+                    <Image.GestureRecognizers>
+                        <TapGestureRecognizer Tapped="AsientoTapped" />
+                    </Image.GestureRecognizers>
+                </Image>
+                <Image x:Name="Asiento39" Source="rojo" Grid.Row="11" Grid.Column="3">
+                    <Image.GestureRecognizers>
+                        <TapGestureRecognizer Tapped="AsientoTapped" />
+                    </Image.GestureRecognizers>
+                </Image>
+
+
+
+
+
+                <!-- Añade más imágenes para los asientos de la columna 3 aquí -->
+
+                <!-- Columna 4 -->
+                <Image x:Name="Asiento41" Source="azul" Grid.Row="0" Grid.Column="4">
+                    <Image.GestureRecognizers>
+                        <TapGestureRecognizer Tapped="AsientoTapped" />
+                    </Image.GestureRecognizers>
+                </Image>
+                <Image x:Name="Asiento42" Source="azul" Grid.Row="1" Grid.Column="4">
+                    <Image.GestureRecognizers>
+                        <TapGestureRecognizer Tapped="AsientoTapped" />
+                    </Image.GestureRecognizers>
+                </Image>
+                <Image x:Name="Asiento43" Source="azul" Grid.Row="2" Grid.Column="4">
+                    <Image.GestureRecognizers>
+                        <TapGestureRecognizer Tapped="AsientoTapped" />
+                    </Image.GestureRecognizers>
+                </Image>
+                <Image x:Name="Asiento44" Source="azul" Grid.Row="3" Grid.Column="4">
+                    <Image.GestureRecognizers>
+                        <TapGestureRecognizer Tapped="AsientoTapped" />
+                    </Image.GestureRecognizers>
+                </Image>
+
+                <Image x:Name="Asiento45" Source="azul" Grid.Row="4" Grid.Column="4">
+                    <Image.GestureRecognizers>
+                        <TapGestureRecognizer Tapped="AsientoTapped" />
+                    </Image.GestureRecognizers>
+                </Image>
+                <Image x:Name="Asiento46" Source="azul" Grid.Row="5" Grid.Column="4">
+                    <Image.GestureRecognizers>
+                        <TapGestureRecognizer Tapped="AsientoTapped" />
+                    </Image.GestureRecognizers>
+                </Image>
+                <Image x:Name="Asiento47" Source="azul" Grid.Row="6" Grid.Column="4">
+                    <Image.GestureRecognizers>
+                        <TapGestureRecognizer Tapped="AsientoTapped" />
+                    </Image.GestureRecognizers>
+                </Image>
+                <Image x:Name="Asiento48" Source="azul" Grid.Row="7" Grid.Column="4">
+                    <Image.GestureRecognizers>
+                        <TapGestureRecognizer Tapped="AsientoTapped" />
+                    </Image.GestureRecognizers>
+                </Image>
+                <Image x:Name="Asiento49" Source="azul" Grid.Row="8" Grid.Column="4">
+                    <Image.GestureRecognizers>
+                        <TapGestureRecognizer Tapped="AsientoTapped" />
+                    </Image.GestureRecognizers>
+                </Image>
+                <Image x:Name="Asiento50" Source="azul" Grid.Row="9" Grid.Column="4">
+                    <Image.GestureRecognizers>
+                        <TapGestureRecognizer Tapped="AsientoTapped" />
+                    </Image.GestureRecognizers>
+                </Image>
+
+                <Image x:Name="Asiento51" Source="azul" Grid.Row="10" Grid.Column="4">
+                    <Image.GestureRecognizers>
+                        <TapGestureRecognizer Tapped="AsientoTapped" />
+                    </Image.GestureRecognizers>
+                </Image>
+
+                <Image x:Name="Asiento52" Source="azul" Grid.Row="11" Grid.Column="4">
+                    <Image.GestureRecognizers>
+                        <TapGestureRecognizer Tapped="AsientoTapped" />
+                    </Image.GestureRecognizers>
+                </Image>
+                <!-- Label "Ruta" -->
+            </Grid>
+
+
+            <!-- ASIENTOS RESERVADOS -->
+            <Grid VerticalOptions="CenterAndExpand" HorizontalOptions="StartAndExpand" HeightRequest="60" WidthRequest="390" Margin="10,549,72,10" >
+                <Label Text="Asiento Reservados: 6" FontSize="14" TextColor="#000000" HorizontalOptions="Center" VerticalOptions="CenterAndExpand" />
+            </Grid>
+
+
+            <BoxView BackgroundColor="#28B2FF"   HeightRequest="67"   RelativeLayout.XConstraint="{ConstraintExpression Type=RelativeToParent, Property=Width, Factor=0}"
+                RelativeLayout.YConstraint="{ConstraintExpression Type=RelativeToParent, Property=Height, Factor=0}" 
+                RelativeLayout.WidthConstraint="{ConstraintExpression Type=RelativeToParent, Property=Width}"
+                />
+            <Image Source="puntos.png" Aspect="AspectFit" HeightRequest="50" WidthRequest="35" BackgroundColor="Transparent"
+       RelativeLayout.XConstraint="{ConstraintExpression Type=RelativeToParent, Property=Width, Factor=1, Constant=-50}"
+       RelativeLayout.YConstraint="{ConstraintExpression Type=RelativeToParent, Property=Height, Factor=0}"
+               />
+            <ImageButton Source="list.png" Clicked="OnMenuButtonClicked" HeightRequest="55" WidthRequest="70" BackgroundColor="Transparent" 
+                         RelativeLayout.XConstraint="{ConstraintExpression Type=RelativeToParent, Property=Width, Factor=0}"
+                         RelativeLayout.YConstraint="{ConstraintExpression Type=RelativeToParent, Property=Height, Factor=0}"  />
+
+            <Grid BackgroundColor="#30000000" RelativeLayout.YConstraint="{ConstraintExpression Type=RelativeToParent, Property=Height, Factor=0.05, Constant=30}">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="Auto" />
+                    <ColumnDefinition Width="*" />
+                </Grid.ColumnDefinitions>
+
+                <Grid Grid.Column="1" WidthRequest="230" 
+                     >
+                    <ListView x:Name="MenuListView" BackgroundColor="White" IsVisible="False" ItemSelected="OnOptionSelected"
+          VerticalOptions="Start" Margin="-6,0,0,0">
+                        <ListView.ItemsSource>
+                            <x:Array Type="{x:Type local:MenuItem}">
+                                <local:MenuItem Text="Cuenta" ImageSource="icon_cuenta.png"/>
+
+                                <local:MenuItem Text="Inicio" ImageSource="icon_home.png" />
+                                <local:MenuItem Text="Bus" ImageSource="icon_bus.png" />
+                                <local:MenuItem Text="Reserva" ImageSource="icon_reserva.png" />
+                                <local:MenuItem Text="Anuncios" ImageSource="icon_notificacion.png" />
+                                <local:MenuItem Text="Salir" ImageSource="salir.png" />
+                            </x:Array>
+                        </ListView.ItemsSource>
+                        <ListView.ItemTemplate>
+                            <DataTemplate>
+                                <ViewCell>
+                                    <Grid Padding="10">
+                                        <Grid.ColumnDefinitions>
+                                            <ColumnDefinition Width="Auto" />
+                                            <ColumnDefinition Width="*" />
+                                        </Grid.ColumnDefinitions>
+
+                                        <!-- Icono -->
+                                        <Image Source="{Binding ImageSource}" HeightRequest="50" WidthRequest="50" />
+
+                                        <!-- Texto -->
+                                        <Label Text="{Binding Text}" TextColor="Black" FontSize="19" Grid.Column="1" VerticalOptions="Center" Margin="20,0,0,0" />
+                                    </Grid>
+                                </ViewCell>
+                            </DataTemplate>
+                        </ListView.ItemTemplate>
+                    </ListView>
+
+                </Grid>
+            </Grid>
+        </RelativeLayout>
     </ContentPage.Content>
 </ContentPage>

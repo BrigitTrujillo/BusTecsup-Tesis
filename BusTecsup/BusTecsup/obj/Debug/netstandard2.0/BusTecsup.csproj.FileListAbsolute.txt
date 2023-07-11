@@ -40,4 +40,3 @@ C:\Users\Usuario\Source\Repos\BusTecsup-Tesis\BusTecsup\BusTecsup\bin\Debug\nets
 C:\Users\Usuario\Source\Repos\BusTecsup-Tesis\BusTecsup\BusTecsup\bin\Debug\netstandard2.0\BusTecsup.pdb
 C:\Users\Usuario\Source\Repos\BusTecsup-Tesis\BusTecsup\BusTecsup\obj\Debug\netstandard2.0\XamlC.stamp
 C:\Users\Usuario\Source\Repos\BusTecsup-Tesis\BusTecsup\BusTecsup\obj\Debug\netstandard2.0\ref\BusTecsup.dll
-C:\Users\Usuario\source\repos\BusTecsup-Tesis\BusTecsup\BusTecsup\obj\Debug\netstandard2.0\Views\UbicacionRealView.xaml.g.cs
